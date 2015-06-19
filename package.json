@@ -1,0 +1,38 @@
+{
+  "name": "simple-html-index",
+  "version": "1.0.0",
+  "description": "a simple HTML index through stream",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.5.0",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "through",
+    "stream",
+    "index",
+    "html",
+    "page",
+    "default"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/simple-html-index.git"
+  },
+  "homepage": "https://github.com/mattdesl/simple-html-index",
+  "bugs": {
+    "url": "https://github.com/mattdesl/simple-html-index/issues"
+  }
+}
