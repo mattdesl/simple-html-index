@@ -33,6 +33,13 @@ Now run `node html.js > index.html` and you would end up with a file that looks 
 
 [![NPM](https://nodei.co/npm/simple-html-index.png)](https://www.npmjs.com/package/simple-html-index)
 
+#### `stream = html([opt])`
+
+Returns a through stream that writes a bare-bones HTML template, with the following optional features:
+
+- `title` whether to include a `<title>` element
+- `entry` if specified, will add a `<script src={{entry}}>` element
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/simple-html-index/blob/master/LICENSE.md) for details.
