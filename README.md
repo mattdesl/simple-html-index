@@ -2,7 +2,8 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-A tiny through stream that returns a bare-bones HTML5 template with an optional `<title>` in the head and `<script>` entry-point in the body.
+A tiny through stream that returns a bare-bones HTML5 template with an optional
+`<link>` and `<title>` in the head and `<script>` entry-point in the body.
 
 ## Example
 
@@ -39,6 +40,7 @@ Returns a through stream that writes a bare-bones HTML template, with the follow
 
 - `title` whether to include a `<title>` element
 - `entry` if specified, will add a `<script src={{entry}}>` element
+- `css` if specified will add a `<link href={{css}}>` element
 
 ## License
 
