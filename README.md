@@ -40,7 +40,7 @@ Returns a through stream that writes a bare-bones HTML template, with the follow
 
 - `title` whether to include a `<title>` element
 - `entry` if specified, will add a `<script src={{entry}}>` element
-- `css` if specified will add a `<link href={{css}}>` element
+- `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
 
 ## License
 
