@@ -42,6 +42,18 @@ Returns a through stream that writes a bare-bones HTML template, with the follow
 - `entry` if specified, will add a `<script src={{entry}}>` element
 - `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
 
+## CLI
+
+You can also use this from the command line to create a simple HTML index file.
+
+```sh
+# install it first
+npm install simple-html-index -g
+
+# then use it
+simple-html-index -e bundle.js > index.html
+```
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/simple-html-index/blob/master/LICENSE.md) for details.
