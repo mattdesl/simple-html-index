@@ -1,9 +1,10 @@
-var through2 = require('through2')
+const fromString = require('from2-string')
 
-module.exports = function (opt) {
+module.exports = createHtml
+
+function createHtml (opt) {
   opt = opt || {}
-  var out = through2()
-  out.end([
+  return fromString([
     '<!doctype html>',
     '<head>',
     opt.title ? ('<title>' + opt.title + '</title>') : '',
@@ -14,5 +15,4 @@ module.exports = function (opt) {
     '</body>',
     '</html>'
   ].join(''))
-  return out
 }

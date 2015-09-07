@@ -10,7 +10,7 @@
     "url": "https://github.com/mattdesl"
   },
   "dependencies": {
-    "through2": "^2.0.0"
+    "from2-string": "^1.1.0"
   },
   "devDependencies": {
     "concat-stream": "^1.5.0",
