@@ -42,6 +42,23 @@ Returns a through stream that writes a bare-bones HTML template, with the follow
 - `entry` if specified, will add a `<script src={{entry}}>` element
 - `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
 
+## Additional properties
+Combine `simple-html-index` with
+[`hyperstream`](https://github.com/substack/hyperstream) to add additional
+properties to html. An example how to add an extra `<script>` tag to the body
+tag:
+```js
+const hyperstream = require('hyperstream')
+const html = require('simple-html-index')
+
+const htmls = html({ entry: 'static/bundle.js' })
+const hs = hyperstream({
+  body: { _appendHtml: "<script>console.log('extra tags!')</script>" }
+})
+
+htmls.pipe(hs).pipe(process.stdout)
+```
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/simple-html-index/blob/master/LICENSE.md) for details.
