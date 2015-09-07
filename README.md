@@ -36,7 +36,8 @@ Now run `node html.js > index.html` and you would end up with a file that looks 
 
 #### `stream = html([opt])`
 
-Returns a through stream that writes a bare-bones HTML template, with the following optional features:
+Returns a read stream that writes a bare-bones HTML template, with the
+following optional features:
 
 - `title` whether to include a `<title>` element
 - `entry` if specified, will add a `<script src={{entry}}>` element
