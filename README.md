@@ -42,6 +42,7 @@ following optional features:
 - `title` whether to include a `<title>` element
 - `entry` if specified, will add a `<script src={{entry}}>` element
 - `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
+- `favicon` if `true` the `favicon.ico` request [will be suppressed][1]
 
 ## Additional properties
 Combine `simple-html-index` with
@@ -63,3 +64,5 @@ htmls.pipe(hs).pipe(process.stdout)
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/simple-html-index/blob/master/LICENSE.md) for details.
+
+[1]: http://stackoverflow.com/a/5568484/1541707
