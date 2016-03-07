@@ -1,6 +1,6 @@
 {
   "name": "simple-html-index",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "a simple HTML index through stream",
   "main": "index.js",
   "license": "MIT",
