@@ -43,8 +43,8 @@ following optional features:
 - `entry` if specified, will add a `<script src={{entry}}>` element
 - `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
 - `favicon` if `true` the `favicon.ico` request [will be suppressed][1]
-- `head` if `[String]` the contents will be dumped `[<meta>].join('')` in the head
-- `body` if `[String]` the contents will be dumped `[<div>].join('')` in the body
+- `head` if `[String]` the contents will be dumped `['<meta>'].join('')` in the head
+- `body` if `[String]` the contents will be dumped `['<div>'].join('')` in the body
 
 ## Additional properties
 Combine `simple-html-index` with
