@@ -14,10 +14,10 @@ function createHtml (opt) {
     '<meta charset="utf-8">',
     opt.css ? ('<link rel="stylesheet" href="' + opt.css + '">') : '',
     opt.favicon ? favicon : '',
-    opt.head ? opt.head.join('') : '',
+    opt.head ? opt.head : '',
     '</head><body>',
     opt.entry ? ('<script src="' + opt.entry + '"></script>') : '',
-    opt.body ? opt.body.join('') : '',
+    opt.body ? opt.body : '',
     '</body>',
     '</html>'
   ].join(''))
