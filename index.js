@@ -8,7 +8,8 @@ module.exports = createHtml
 function createHtml (opt) {
   opt = opt || {}
   return fromString([
-    '<!doctype html>',
+    '<!DOCTYPE html>',
+    '<html lang="en-us">',
     '<head>',
     opt.title ? ('<title>' + opt.title + '</title>') : '',
     '<meta charset="utf-8">',
