@@ -43,6 +43,7 @@ following optional features:
 - `entry` if specified, will add a `<script src={{entry}}>` element
 - `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
 - `favicon` if `true` the `favicon.ico` request [will be suppressed][1]
+- `lang` if specified, will add a `<html lang={{lang}}>` element.
 
 ## Additional properties
 Combine `simple-html-index` with
