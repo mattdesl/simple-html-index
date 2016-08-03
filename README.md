@@ -45,6 +45,7 @@ following optional features:
 - `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
 - `favicon` if `true` the `favicon.ico` request [will be suppressed][1]
 - `lang` the value of the `lang` attribute in the root `<html>` element, default `'en'`
+- `base` if specified will add a `<base href={{base}}>` element
 
 ## Additional properties
 Combine `simple-html-index` with

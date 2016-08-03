@@ -13,6 +13,7 @@ function createHtml (opt) {
     '<head>',
     opt.title ? ('<title>' + opt.title + '</title>') : '',
     '<meta charset="utf-8">',
+    opt.base ? ('<base href="' + opt.base + '">') : '',
     opt.css ? ('<link rel="stylesheet" href="' + opt.css + '">') : '',
     opt.favicon ? favicon : '',
     '</head><body>',
