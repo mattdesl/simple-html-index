@@ -9,7 +9,7 @@ function createHtml (opt) {
   opt = opt || {}
   return fromString([
     '<!DOCTYPE html>',
-    '<html lang="' + (opt.lang || 'en') + '">',
+    '<html lang="' + (opt.lang || 'en') + '" dir="' + (opt.dir || 'ltr') + '">',
     '<head>',
     opt.title ? ('<title>' + opt.title + '</title>') : '',
     '<meta charset="utf-8">',
