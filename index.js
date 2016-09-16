@@ -14,7 +14,9 @@ function createHtml (opt) {
     opt.title ? ('<title>' + opt.title + '</title>') : '',
     '<meta charset="utf-8">',
     opt.base ? ('<base href="' + opt.base + '">') : '',
-    opt.css ? ('<link rel="stylesheet" href="' + opt.css + '">') : '',
+    opt.css ? Array.prototype.concat(opt.css).map(function (css) {
+      return '<link rel="stylesheet" href="' + css + '">'
+    }).join('') : '',
     opt.favicon ? favicon : '',
     '</head><body>',
     opt.entry ? ('<script src="' + opt.entry + '"></script>') : '',

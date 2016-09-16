@@ -42,7 +42,7 @@ following optional features:
 
 - `title` whether to include a `<title>` element
 - `entry` if specified, will add a `<script src={{entry}}>` element
-- `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element
+- `css` if specified will add a `<link rel="stylesheet" href={{css}}>` element, or multiple elements if it's an array
 - `favicon` if `true` the `favicon.ico` request [will be suppressed][1]
 - `lang` the value of the `lang` attribute in the root `<html>` element, default `'en'`
 - `base` if specified will add a `<base href={{base}}>` element
